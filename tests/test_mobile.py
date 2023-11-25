@@ -3,6 +3,8 @@ from appium.webdriver.common.appiumby import AppiumBy
 import allure
 from allure_commons.types import Severity
 
+import tests.attach as attach
+
 
 XPATH_THREE_DOTS = ("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android"
                     ".widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/"
@@ -38,6 +40,8 @@ def test_settings_opens(setup_browser):
     with allure.step("select 'settings' from the dropdown menu"):
         browser.element((AppiumBy.XPATH, XPATH_SETTINGS)).click()
     with allure.step("the settings page should open and its heading should be present"):
+        attach.screenshot(browser)
+        attach.html(browser)
         browser.element((AppiumBy.XPATH, XPATH_SETTINGS_HEADING)).should(be.present)
 
 
@@ -53,5 +57,8 @@ def test_search_works(setup_browser):
         browser.element((AppiumBy.XPATH, XPATH_SEARCH)).click()
     with allure.step("type 'electron' in the search field"):
         browser.element((AppiumBy.XPATH, XPATH_SEARCH_FIELD)).type("electron")
+    with allure.step("search results should be visible"):
+        attach.screenshot(browser)
+        attach.html(browser)
 
     # ...it was at this point that the free plan expired

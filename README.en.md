@@ -38,7 +38,7 @@ pytest tests
 
 ##  Remote execution
 
-There is a [Selenoid](https://selenoid.autotests.cloud/#/) server with a [Jenkins](https://jenkins.autotests.cloud/job/mlankin_arxiv_tests/) project that can execute tests stored in this repository. To run the tests:
+There is a [Selenoid](https://selenoid.autotests.cloud/#/) server with a [Jenkins](https://jenkins.autotests.cloud/job/007-niknal-arxiv-mobile/) project that can execute tests stored in this repository. To run the tests:
 - open the project
 - click "Build with Parameters"
 - choose the build parameters (or just use default values)
@@ -59,7 +59,7 @@ The "Suites" tab has a detailed representation of how each test was executed, wi
 
 ### Отчеты в Allure Testops
 
-The Jenkins project is also integrated with an [Allure Testops project](https://allure.autotests.cloud/project/3759/dashboards), which stores test results for all previous launches of the project. Why would we need that? 
+The Jenkins project is also integrated with an [Allure Testops project](https://allure.autotests.cloud/project/3848/dashboards), which stores test results for all previous launches of the project. Why would we need that? 
 
 - to have manual and automated test cases in the same interface, showing their collective coverage of features:
 ![Manual and automated test cases in Allure Testops](resources/images/allure_testops_manual_and_automated.png)

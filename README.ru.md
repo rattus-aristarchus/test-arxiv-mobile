@@ -14,6 +14,8 @@ ArXiv - сайт, на котором с начала 1990х годов выкл
 - Первая страница мобильного приложения 
 - Поиск
 
+В [отдельном проекте](https://github.com/rattus-aristarchus/test-arxiv-mobile) лежат тесты, покрывающие UI и API сайта arXiv.
+
 ## Стек технологий:
 <img src="resources/icons/python.svg" height="40" width="40" /><img src="resources/icons/selenium.png" height="40" width="40" /><img src="resources/icons/selene.png" height="40" width="40" /><img src="resources/icons/pytest.svg" height="40" width="40" /><img src="resources/icons/allure_Report.svg" height="40" width="40" /><img src="resources/icons/allure_EE.svg" height="40" width="40" /><img src="resources/icons/jenkins.svg" height="40" width="40" /><img src="resources/icons/jira.svg" height="40" width="40" /><img src="resources/icons/browserstack.png" height="40" width="40" /><img src="resources/icons/github.png" height="40" width="40" /><img src="resources/icons/pycharm.png" height="40" width="40" />
 

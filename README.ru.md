@@ -39,7 +39,7 @@ pytest tests
 
 ## Удаленный запуск
 
-На сервере [Selenoid](https://selenoid.autotests.cloud/#/) написан проект в [Jenkins](https://jenkins.autotests.cloud/job/mlankin_arxiv_tests/), выполняющий тесты из этого репозитория. Чтобы запустить в нём тесты, необходимо:
+На сервере [Selenoid](https://selenoid.autotests.cloud/#/) написан проект в [Jenkins](https://jenkins.autotests.cloud/job/007-niknal-arxiv-mobile/), выполняющий тесты из этого репозитория. Чтобы запустить в нём тесты, необходимо:
 - открыть проект
 - нажать "Build with Parameters"
 - выбрать параметры для запуска (или оставить значения по умолчанию)
@@ -60,7 +60,7 @@ pytest tests
 
 ### Отчеты в Allure Testops
 
-Проект Jenkins так же интегрирован с [проектом Allure Testops](https://allure.autotests.cloud/project/3759/dashboards), который хранит результаты всех прошлых запусков. Зачем? Чтобы иметь:
+Проект Jenkins так же интегрирован с [проектом Allure Testops](https://allure.autotests.cloud/project/3848/dashboards), который хранит результаты всех прошлых запусков. Зачем? Чтобы иметь:
 
 - отображение ручных и автоматизированных тест-кейсов в одном интерфейсе, с представлением их общего покрытия функциональности:
 ![Manual and automated test cases in Allure Testops](resources/images/allure_testops_manual_and_automated.png)

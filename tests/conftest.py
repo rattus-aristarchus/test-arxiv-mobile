@@ -16,7 +16,9 @@ def load_env():
     dotenv.load_dotenv()
 
 
+"""
 def pytest_addoption(parser):
+    
     parser.addoption(
         "--browser",
         help="Браузер для запуска тестов",
@@ -28,6 +30,7 @@ def pytest_addoption(parser):
         help="Версия браузера",
         default="100.0"
     )
+"""
 
 
 @pytest.fixture(scope="function")

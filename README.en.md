@@ -14,17 +14,7 @@ In a nutshell:
 - Basic search
 
 ## Tech stack:
-<img src="resources/icons/python.svg" height="40" width="40" />
-<img src="resources/icons/selenium.png" height="40" width="40" />
-<img src="resources/icons/selene.png" height="40" width="40" />
-<img src="resources/icons/pytest.svg" height="40" width="40" />
-<img src="resources/icons/allure_Report.svg" height="40" width="40" />
-<img src="resources/icons/allure_EE.svg" height="40" width="40" />
-<img src="resources/icons/jenkins.svg" height="40" width="40" />
-<img src="resources/icons/jira.svg" height="40" width="40" />
-<img src="resources/icons/browserstack.png" height="40" width="40" />
-<img src="resources/icons/github.png" height="40" width="40" />
-<img src="resources/icons/pycharm.png" height="40" width="40" />
+<img src="resources/icons/python.svg" height="40" width="40" /><img src="resources/icons/selenium.png" height="40" width="40" /><img src="resources/icons/selene.png" height="40" width="40" /><img src="resources/icons/pytest.svg" height="40" width="40" /><img src="resources/icons/allure_Report.svg" height="40" width="40" /><img src="resources/icons/allure_EE.svg" height="40" width="40" /><img src="resources/icons/jenkins.svg" height="40" width="40" /><img src="resources/icons/jira.svg" height="40" width="40" /><img src="resources/icons/browserstack.png" height="40" width="40" /><img src="resources/icons/github.png" height="40" width="40" /><img src="resources/icons/pycharm.png" height="40" width="40" />
 
 ## Local execution
 

@@ -1,8 +1,8 @@
-# ПРИМЕР ПРОЕКТА ПО ТЕСТИРОВАНИЮ UI МОБИЛЬНОГО ПРИЛОЖЕНИЯ [ARXIV MOBILE](https://f-droid.org/ru/packages/com.commonsware.android.arXiv/)
+# ПРИМЕР ПРОЕКТА ПО ТЕСТИРОВАНИЮ  МОБИЛЬНОГО ПРИЛОЖЕНИЯ [ARXIV EXPLORER](https://github.com/GarrettBeatty/arXiv-eXplorer)
 
-ArXiv - сайт, на котором с начала 1990х годов выкладывают в открытом доступе статьи по естественным наукам.
+ArXiv - сайт, на котором с начала 1990х годов выкладывают в открытом доступе статьи по естественным наукам. ArXiv eXplorer - мобильное приложение для этого сайта под Android. Скачать приложение можно [здесь](https://f-droid.org/en/packages/com.gbeatty.arxiv/).
 
-![Arxiv main page](/resources/images/arxiv.png)
+![The arxiv mobile app](/resources/images/arxiv_mobile_0.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_1.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_2.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_3.png)
 
 В двух словах:
 
@@ -14,7 +14,7 @@ ArXiv - сайт, на котором с начала 1990х годов выкл
 - Первая страница мобильного приложения 
 - Поиск
 
-В [отдельном проекте](https://github.com/rattus-aristarchus/test-arxiv-mobile) лежат тесты, покрывающие UI и API сайта arXiv.
+В [отдельном проекте](https://github.com/rattus-aristarchus/test-arxiv) лежат тесты для самого сайта arXiv.
 
 ## Стек технологий:
 <img src="resources/icons/python.svg" height="40" width="40" /><img src="resources/icons/selenium.png" height="40" width="40" /><img src="resources/icons/selene.png" height="40" width="40" /><img src="resources/icons/pytest.svg" height="40" width="40" /><img src="resources/icons/allure_Report.svg" height="40" width="40" /><img src="resources/icons/allure_EE.svg" height="40" width="40" /><img src="resources/icons/jenkins.svg" height="40" width="40" /><img src="resources/icons/jira.svg" height="40" width="40" /><img src="resources/icons/browserstack.png" height="40" width="40" /><img src="resources/icons/github.png" height="40" width="40" /><img src="resources/icons/pycharm.png" height="40" width="40" />
@@ -23,7 +23,7 @@ ArXiv - сайт, на котором с начала 1990х годов выкл
 
 Для запуска тестов на своей машине необходимо:
 
-- клонировать репозиторий `https://github.com/rattus-aristarchus/test_arxiv.git`
+- клонировать репозиторий `https://github.com/rattus-aristarchus/test_arxiv_mobile.git`
 - создать файл `.env` с переменными среды. Файл должен содержать следующие переменные:
 ```
 BROWSERSTACK_LOGIN=логин для browserstack
@@ -41,10 +41,9 @@ pytest tests
 
 ## Удаленный запуск
 
-На сервере [Selenoid](https://selenoid.autotests.cloud/#/) написан проект в [Jenkins](https://jenkins.autotests.cloud/job/007-niknal-arxiv-mobile/), выполняющий тесты из этого репозитория. Чтобы запустить в нём тесты, необходимо:
+Существует [проект Jenkins](https://jenkins.autotests.cloud/job/007-niknal-arxiv-mobile/), выполняющий тесты из этого репозитория. Чтобы запустить в нём тесты, необходимо:
 - открыть проект
-- нажать "Build with Parameters"
-- выбрать параметры для запуска (или оставить значения по умолчанию)
+- нажать "Build now"
 - нажать "Build"
 
 ![Run in Jenkins](resources/images/jenkins_run.png)
@@ -75,6 +74,6 @@ pytest tests
 
 ### Jira
 
-Проект в Allure Testops интегрирован с Jira, в ней заведены задачи по обнаруженным неисправностям ([вот](https://jira.autotests.cloud/browse/HOMEWORK-948) и [вот](https://jira.autotests.cloud/browse/HOMEWORK-963)). В задачах есть ссылки на соответствующие тесты в Testops, и наоборот.
+Проект в Allure Testops интегрирован с Jira. Задачи в Jira привязаны к тестам в Testops.
 
 ![Jira](resources/images/jira.png)

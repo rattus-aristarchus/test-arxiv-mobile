@@ -1,8 +1,8 @@
-# A SAMPLE TEST BASE FOR THE [ARXIV MOBILE](https://f-droid.org/ru/packages/com.commonsware.android.arXiv/) APP
+# A SAMPLE TEST BASE FOR THE [ARXIV EXPLORER](https://github.com/GarrettBeatty/arXiv-eXplorer) APP
 
-ArXiv is a website that has been allowing free access to scientific articles in certain fields since the beginning of 1990s. 
+ArXiv is a website that has been allowing free access to scientific articles in certain fields since the beginning of 1990s. ArXiv eXplorer is an Android app for the site which you can download [here](https://f-droid.org/en/packages/com.gbeatty.arxiv/). 
 
-![Arxiv main page](/resources/images/arxiv.png)
+![The arxiv mobile app](/resources/images/arxiv_mobile_0.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_1.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_2.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_3.png)
 
 In a nutshell:
 
@@ -13,7 +13,7 @@ In a nutshell:
 - The first page of the mobile app
 - Basic search
 
-A [separate project](https://github.com/rattus-aristarchus/test-arxiv-mobile) hosts tests for the arXiv site's UI and API.
+A [separate project](https://github.com/rattus-aristarchus/test-arxiv) hosts tests for the arXiv site itself.
 
 ## Tech stack:
 <img src="resources/icons/python.svg" height="40" width="40" /><img src="resources/icons/selenium.png" height="40" width="40" /><img src="resources/icons/selene.png" height="40" width="40" /><img src="resources/icons/pytest.svg" height="40" width="40" /><img src="resources/icons/allure_Report.svg" height="40" width="40" /><img src="resources/icons/allure_EE.svg" height="40" width="40" /><img src="resources/icons/jenkins.svg" height="40" width="40" /><img src="resources/icons/jira.svg" height="40" width="40" /><img src="resources/icons/browserstack.png" height="40" width="40" /><img src="resources/icons/github.png" height="40" width="40" /><img src="resources/icons/pycharm.png" height="40" width="40" />
@@ -22,11 +22,11 @@ A [separate project](https://github.com/rattus-aristarchus/test-arxiv-mobile) ho
 
 To run the tests locally, do the following:
 
-- clone the remote repository `https://github.com/rattus-aristarchus/test_arxiv.git`
+- clone the remote repository `https://github.com/rattus-aristarchus/test_arxiv_mobile.git`
 - create an `.env` file with environment variables. The file should contain the following variables:
 ```
-BROWSERSTACK_LOGIN=логин для browserstack (для запуска мобильных тестов)
-BROWSERSTACK_PASSWORD=пароль для browserstack
+BROWSERSTACK_LOGIN=your login for browserstack 
+BROWSERSTACK_PASSWORD=your password for browserstack
 ```
 - execute the following commands in the root folder of the project:
 ```sh
@@ -40,11 +40,9 @@ pytest tests
 
 ##  Remote execution
 
-There is a [Selenoid](https://selenoid.autotests.cloud/#/) server with a [Jenkins](https://jenkins.autotests.cloud/job/007-niknal-arxiv-mobile/) project that can execute tests stored in this repository. To run the tests:
+There is a [Jenkins](https://jenkins.autotests.cloud/job/007-niknal-arxiv-mobile/) project that can execute tests stored in this repository. To run the tests:
 - open the project
-- click "Build with Parameters"
-- choose the build parameters (or just use default values)
-- click "Build"
+- click "Build Now"
 
 ![Run in Jenkins](resources/images/jenkins_run.png)
 
@@ -59,7 +57,7 @@ The "Suites" tab has a detailed representation of how each test was executed, wi
 ![Allure Report](resources/images/allure_report_tree.png)
 
 
-### Отчеты в Allure Testops
+### Allure Testops
 
 The Jenkins project is also integrated with an [Allure Testops project](https://allure.autotests.cloud/project/3848/dashboards), which stores test results for all previous launches of the project. Why would we need that? 
 
@@ -74,6 +72,6 @@ The Jenkins project is also integrated with an [Allure Testops project](https://
 
 ### Jira
 
-The Allure Testops project is integrated with Jira. Separate issues have been created for each detected bug (see [here](https://jira.autotests.cloud/browse/HOMEWORK-948) and [here](https://jira.autotests.cloud/browse/HOMEWORK-963)). Each issue is linked to an Allure Testops test case, and vice versa.
+The Allure Testops project is integrated with Jira. Issues are linked to test cases in Testops.
 
 ![Jira](resources/images/jira.png)

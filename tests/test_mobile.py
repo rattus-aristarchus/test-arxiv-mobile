@@ -48,7 +48,7 @@ def test_settings_opens(setup_browser):
 @allure.tag("Mobile")
 @allure.severity(severity_level=Severity.CRITICAL)
 @allure.label("owner", 'lankinma')
-@allure.feature("settings")
+@allure.feature("search")
 @allure.title("The search field works")
 def test_search_works(setup_browser):
     with allure.step("tap the 'NOT NOW' button when asked to donate"):

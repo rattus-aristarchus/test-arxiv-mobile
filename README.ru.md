@@ -2,7 +2,7 @@
 
 ArXiv - сайт, на котором с начала 1990х годов выкладывают в открытом доступе статьи по естественным наукам. ArXiv eXplorer - мобильное приложение для этого сайта под Android. Скачать приложение можно [здесь](https://f-droid.org/en/packages/com.gbeatty.arxiv/).
 
-![The arxiv mobile app](/resources/images/arxiv_mobile_0.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_1.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_2.png) ![The arxiv mobile app](/resources/images/arxiv_mobile_3.png)
+<img src="/resources/images/arxiv_mobile_0.png" height="320" width="180"/><img src="/resources/images/arxiv_mobile_1.png" height="320" width="180"/><img src="/resources/images/arxiv_mobile_2.png" height="320" width="180"/><img src="/resources/images/arxiv_mobile_3.png" height="320" width="180"/>
 
 В двух словах:
 
